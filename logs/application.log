@@ -1,101 +1,904 @@
-2025-05-29 14:11:39 - Starting CloneApplication using Java 17.0.10 with PID 22608 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
-2025-05-29 14:11:39 - HV000001: Hibernate Validator 8.0.1.Final
-2025-05-29 14:11:39 - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 14:11:40 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-29 14:11:40 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-29 14:11:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 14:11:40 - Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
-2025-05-29 14:11:40 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
-2025-05-29 14:11:41 - Tomcat initialized with port(s): 8080 (http)
-2025-05-29 14:11:41 - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-29 14:11:41 - Starting service [Tomcat]
-2025-05-29 14:11:41 - Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-05-29 14:11:41 - Initializing Spring embedded WebApplicationContext
-2025-05-29 14:11:41 - Root WebApplicationContext: initialization completed in 1418 ms
-2025-05-29 14:11:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 14:11:41 - HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-05-29 14:11:41 - HHH000406: Using bytecode reflection optimizer
-2025-05-29 14:11:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 14:11:41 - HikariPool-1 - Starting...
-2025-05-29 14:11:42 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20c41bf7
-2025-05-29 14:11:42 - HikariPool-1 - Start completed.
-2025-05-29 14:11:42 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 14:11:42 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-29 14:11:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 14:11:43 - 
+2025-05-30 09:08:02 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:08:02 - Starting CloneApplication using Java 17.0.10 with PID 21196 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:08:02 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:08:02 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:08:02 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:08:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:08:03 - Finished Spring Data repository scanning in 70 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:08:03 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:08:04 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:08:04 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:08:04 - Starting service [Tomcat]
+2025-05-30 09:08:04 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:08:04 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:08:04 - Root WebApplicationContext: initialization completed in 1552 ms
+2025-05-30 09:08:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:08:04 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:08:04 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:08:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:08:04 - HikariPool-1 - Starting...
+2025-05-30 09:08:04 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61db4c5a
+2025-05-30 09:08:04 - HikariPool-1 - Start completed.
+2025-05-30 09:08:04 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:08:04 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:08:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:08:05 - 
     alter table bookdetail 
        modify column rating DECIMAL(3,2)
-2025-05-29 14:11:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
-2025-05-29 14:11:43 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
-2025-05-29 14:11:43 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
-2025-05-29 14:11:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 14:11:44 - 
+2025-05-30 09:08:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:08:05 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:08:06 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:08:06 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:08:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:08:06 - 
 
-Using generated security password: bb70cfc2-3671-45b8-b131-41423ab5f16e
+Using generated security password: 74c9b2f5-b22e-4be3-aef1-7b66625ca836
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-05-29 14:11:44 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44e7c67f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ea4d68, org.springframework.security.web.context.SecurityContextHolderFilter@64241d55, org.springframework.security.web.header.HeaderWriterFilter@76965238, org.springframework.web.filter.CorsFilter@17b0c88b, org.springframework.security.web.authentication.logout.LogoutFilter@2779a954, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64544793, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17f9951e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57b43c30, org.springframework.security.web.access.ExceptionTranslationFilter@26cc425, org.springframework.security.web.access.intercept.AuthorizationFilter@1a5bc241]
-2025-05-29 14:11:44 - LiveReload server is running on port 35729
-2025-05-29 14:11:44 - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-29 14:11:44 - Tomcat started on port(s): 8080 (http) with context path ''
-2025-05-29 14:11:44 - Started CloneApplication in 5.318 seconds (process running for 5.741)
-2025-05-29 15:55:35 - HV000001: Hibernate Validator 8.0.1.Final
-2025-05-29 15:55:35 - Starting CloneApplication using Java 17.0.10 with PID 25284 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
-2025-05-29 15:55:35 - No active profile set, falling back to 1 default profile: "default"
-2025-05-29 15:55:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-29 15:55:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-29 15:55:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-29 15:55:35 - Finished Spring Data repository scanning in 69 ms. Found 10 JPA repository interfaces.
-2025-05-29 15:55:36 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
-2025-05-29 15:55:36 - Tomcat initialized with port(s): 8080 (http)
-2025-05-29 15:55:36 - Initializing ProtocolHandler ["http-nio-8080"]
-2025-05-29 15:55:36 - Starting service [Tomcat]
-2025-05-29 15:55:36 - Starting Servlet engine: [Apache Tomcat/10.1.15]
-2025-05-29 15:55:36 - Initializing Spring embedded WebApplicationContext
-2025-05-29 15:55:36 - Root WebApplicationContext: initialization completed in 1387 ms
-2025-05-29 15:55:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-29 15:55:36 - HHH000412: Hibernate ORM core version 6.2.13.Final
-2025-05-29 15:55:36 - HHH000406: Using bytecode reflection optimizer
-2025-05-29 15:55:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-29 15:55:37 - HikariPool-1 - Starting...
-2025-05-29 15:55:37 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@346c98b5
-2025-05-29 15:55:37 - HikariPool-1 - Start completed.
-2025-05-29 15:55:37 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-29 15:55:37 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-29 15:55:38 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-29 15:55:38 - 
+2025-05-30 09:08:07 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e93daef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44e7c67f, org.springframework.security.web.context.SecurityContextHolderFilter@85cac13, org.springframework.security.web.header.HeaderWriterFilter@57f76c69, org.springframework.web.filter.CorsFilter@ea4d68, org.springframework.security.web.authentication.logout.LogoutFilter@6bcfa6e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20e7947b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51d73868, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17b0c88b, org.springframework.security.web.access.ExceptionTranslationFilter@11117d1b, org.springframework.security.web.access.intercept.AuthorizationFilter@763b1ab]
+2025-05-30 09:08:07 - LiveReload server is running on port 35729
+2025-05-30 09:08:07 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:08:07 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:08:07 - Started CloneApplication in 5.451 seconds (process running for 5.872)
+2025-05-30 09:10:50 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:10:50 - Starting CloneApplication using Java 17.0.10 with PID 2912 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:10:50 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:10:50 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:10:50 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:10:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:10:51 - Finished Spring Data repository scanning in 76 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:10:51 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:10:52 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:10:52 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:10:52 - Starting service [Tomcat]
+2025-05-30 09:10:52 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:10:52 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:10:52 - Root WebApplicationContext: initialization completed in 1451 ms
+2025-05-30 09:10:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:10:52 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:10:52 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:10:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:10:52 - HikariPool-1 - Starting...
+2025-05-30 09:10:52 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:10:52 - HikariPool-1 - Start completed.
+2025-05-30 09:10:52 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:10:52 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:10:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:10:53 - 
     alter table bookdetail 
        modify column rating DECIMAL(3,2)
-2025-05-29 15:55:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
-2025-05-29 15:55:38 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
-2025-05-29 15:55:38 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
-2025-05-29 15:55:39 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
-2025-05-29 15:55:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-29 15:55:39 - 
+2025-05-30 09:10:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:10:54 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:10:54 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:10:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:10:54 - 
 
-Using generated security password: 694b32b8-ffe9-47ac-97c6-d50a0e9b3488
+Using generated security password: 5b9587eb-ad79-42a7-8c9b-35ff7b080586
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-05-29 15:55:39 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f413c43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@224e1d06, org.springframework.security.web.context.SecurityContextHolderFilter@129d9703, org.springframework.security.web.header.HeaderWriterFilter@7168e770, org.springframework.web.filter.CorsFilter@75b145cc, org.springframework.security.web.authentication.logout.LogoutFilter@34c6387c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e56fb5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10b32037, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8b426f, org.springframework.security.web.access.ExceptionTranslationFilter@32891ecd, org.springframework.security.web.access.intercept.AuthorizationFilter@4a70f643]
-2025-05-29 15:55:39 - LiveReload server is running on port 35729
-2025-05-29 15:55:39 - Starting ProtocolHandler ["http-nio-8080"]
-2025-05-29 15:55:40 - Tomcat started on port(s): 8080 (http) with context path ''
-2025-05-29 15:55:40 - Started CloneApplication in 5.195 seconds (process running for 5.646)
-2025-05-29 15:56:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-29 15:56:22 - Initializing Servlet 'dispatcherServlet'
-2025-05-29 15:56:22 - Completed initialization in 1 ms
+2025-05-30 09:10:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b044bcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6725e1cd, org.springframework.security.web.context.SecurityContextHolderFilter@33e91523, org.springframework.security.web.header.HeaderWriterFilter@69468a6e, org.springframework.web.filter.CorsFilter@119772b7, org.springframework.security.web.authentication.logout.LogoutFilter@3e0e0c7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@679adbb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b95f94e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@124b32b3, org.springframework.security.web.access.ExceptionTranslationFilter@768ed4e7, org.springframework.security.web.access.intercept.AuthorizationFilter@5e3a42fb]
+2025-05-30 09:10:55 - LiveReload server is running on port 35729
+2025-05-30 09:10:55 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:10:55 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:10:55 - Started CloneApplication in 5.219 seconds (process running for 5.674)
+2025-05-30 09:22:49 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:22:49 - Starting CloneApplication using Java 17.0.10 with PID 23168 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:22:49 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:22:49 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:22:49 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:22:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:22:50 - Finished Spring Data repository scanning in 63 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:22:50 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:22:50 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:22:50 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:22:50 - Starting service [Tomcat]
+2025-05-30 09:22:50 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:22:50 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:22:50 - Root WebApplicationContext: initialization completed in 1394 ms
+2025-05-30 09:22:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:22:50 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:22:50 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:22:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:22:51 - HikariPool-1 - Starting...
+2025-05-30 09:22:51 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:22:51 - HikariPool-1 - Start completed.
+2025-05-30 09:22:51 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:22:51 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:22:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:22:52 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:22:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:22:52 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:22:52 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:22:53 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:22:53 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:22:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:22:53 - 
+
+Using generated security password: 01320a31-769d-4d27-8324-41001c73bd39
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:22:53 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a8b426f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4ec859, org.springframework.security.web.context.SecurityContextHolderFilter@768ed4e7, org.springframework.security.web.header.HeaderWriterFilter@129d9703, org.springframework.web.filter.CorsFilter@5e3a42fb, org.springframework.security.web.authentication.logout.LogoutFilter@33c4e237, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69468a6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ea1fcca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21dae3d5, org.springframework.security.web.access.ExceptionTranslationFilter@6c10ca98, org.springframework.security.web.access.intercept.AuthorizationFilter@6f413c43]
+2025-05-30 09:22:53 - LiveReload server is running on port 35729
+2025-05-30 09:22:53 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:22:53 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:22:53 - Started CloneApplication in 5.045 seconds (process running for 5.44)
+2025-05-30 09:23:18 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:23:18 - Starting CloneApplication using Java 17.0.10 with PID 876 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:23:18 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:23:18 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:23:18 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:23:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:23:19 - Finished Spring Data repository scanning in 62 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:23:19 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:23:19 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:23:19 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:23:19 - Starting service [Tomcat]
+2025-05-30 09:23:19 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:23:19 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:23:19 - Root WebApplicationContext: initialization completed in 1397 ms
+2025-05-30 09:23:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:23:20 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:23:20 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:23:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:23:20 - HikariPool-1 - Starting...
+2025-05-30 09:23:20 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68d579a
+2025-05-30 09:23:20 - HikariPool-1 - Start completed.
+2025-05-30 09:23:20 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:23:20 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:23:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:23:21 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:23:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:23:21 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:23:21 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:23:22 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:23:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:23:22 - 
+
+Using generated security password: f8a8cfca-e417-467d-92fa-5656a5ad4279
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:23:23 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@462f6fb9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77138017, org.springframework.security.web.context.SecurityContextHolderFilter@5608160a, org.springframework.security.web.header.HeaderWriterFilter@284960b4, org.springframework.web.filter.CorsFilter@35f1cfc, org.springframework.security.web.authentication.logout.LogoutFilter@2481dc51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5738db58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22b080c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37f8f699, org.springframework.security.web.access.ExceptionTranslationFilter@5c6f7be0, org.springframework.security.web.access.intercept.AuthorizationFilter@5e1df211]
+2025-05-30 09:23:23 - LiveReload server is running on port 35729
+2025-05-30 09:23:23 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:23:23 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:23:23 - Started CloneApplication in 5.174 seconds (process running for 5.611)
+2025-05-30 09:25:41 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:25:41 - Starting CloneApplication using Java 17.0.10 with PID 15220 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:25:41 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:25:42 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:25:42 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:25:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:25:42 - Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:25:42 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:25:43 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:25:43 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:25:43 - Starting service [Tomcat]
+2025-05-30 09:25:43 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:25:43 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:25:43 - Root WebApplicationContext: initialization completed in 1415 ms
+2025-05-30 09:25:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:25:43 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:25:43 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:25:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:25:43 - HikariPool-1 - Starting...
+2025-05-30 09:25:44 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:25:44 - HikariPool-1 - Start completed.
+2025-05-30 09:25:44 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:25:44 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:25:44 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:25:45 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:25:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:25:45 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:25:45 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:25:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:25:45 - 
+
+Using generated security password: 81db8857-36e5-40e4-b839-493420441b6b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:25:46 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e3a42fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21dae3d5, org.springframework.security.web.context.SecurityContextHolderFilter@69468a6e, org.springframework.security.web.header.HeaderWriterFilter@4e56fb5a, org.springframework.web.filter.CorsFilter@117255bb, org.springframework.security.web.authentication.logout.LogoutFilter@23d9085f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@101ae72a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20fe53df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b044bcc, org.springframework.security.web.access.ExceptionTranslationFilter@129d9703, org.springframework.security.web.access.intercept.AuthorizationFilter@75b145cc]
+2025-05-30 09:25:46 - LiveReload server is running on port 35729
+2025-05-30 09:25:46 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:25:46 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:25:46 - Started CloneApplication in 5.223 seconds (process running for 5.656)
+2025-05-30 09:27:00 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:27:00 - Starting CloneApplication using Java 17.0.10 with PID 21972 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:27:00 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:27:00 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:27:00 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:27:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:27:01 - Finished Spring Data repository scanning in 83 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:27:01 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:27:02 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:27:02 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:27:02 - Starting service [Tomcat]
+2025-05-30 09:27:02 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:27:02 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:27:02 - Root WebApplicationContext: initialization completed in 1498 ms
+2025-05-30 09:27:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:27:02 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:27:02 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:27:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:27:02 - HikariPool-1 - Starting...
+2025-05-30 09:27:02 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7791323
+2025-05-30 09:27:02 - HikariPool-1 - Start completed.
+2025-05-30 09:27:02 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:27:02 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:27:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:27:03 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:27:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:27:04 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:27:04 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:27:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:27:04 - 
+
+Using generated security password: 61f2d583-5036-4795-a804-510c58b6f1a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:27:05 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bd8511d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@133bf822, org.springframework.security.web.context.SecurityContextHolderFilter@5bc50aee, org.springframework.security.web.header.HeaderWriterFilter@6ea1fcca, org.springframework.web.filter.CorsFilter@39132238, org.springframework.security.web.authentication.logout.LogoutFilter@3425314, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b95f94e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b2c5c17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72064103, org.springframework.security.web.access.ExceptionTranslationFilter@101ae72a, org.springframework.security.web.access.intercept.AuthorizationFilter@6725e1cd]
+2025-05-30 09:27:05 - LiveReload server is running on port 35729
+2025-05-30 09:27:05 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:27:05 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:27:05 - Started CloneApplication in 5.164 seconds (process running for 5.575)
+2025-05-30 09:28:16 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:28:16 - Starting CloneApplication using Java 17.0.10 with PID 22540 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:28:16 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:28:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:28:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:28:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:28:17 - Finished Spring Data repository scanning in 69 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:28:17 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:28:18 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:28:18 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:28:18 - Starting service [Tomcat]
+2025-05-30 09:28:18 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:28:18 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:28:18 - Root WebApplicationContext: initialization completed in 1572 ms
+2025-05-30 09:28:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:28:18 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:28:18 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:28:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:28:18 - HikariPool-1 - Starting...
+2025-05-30 09:28:18 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:28:18 - HikariPool-1 - Start completed.
+2025-05-30 09:28:18 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:28:18 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:28:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:28:19 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:28:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:28:20 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:28:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:28:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:28:20 - 
+
+Using generated security password: 863cf071-e903-4a49-897d-483cd22550a3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:28:21 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e3a42fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21dae3d5, org.springframework.security.web.context.SecurityContextHolderFilter@69468a6e, org.springframework.security.web.header.HeaderWriterFilter@4e56fb5a, org.springframework.web.filter.CorsFilter@117255bb, org.springframework.security.web.authentication.logout.LogoutFilter@23d9085f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@101ae72a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20fe53df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b044bcc, org.springframework.security.web.access.ExceptionTranslationFilter@129d9703, org.springframework.security.web.access.intercept.AuthorizationFilter@75b145cc]
+2025-05-30 09:28:21 - LiveReload server is running on port 35729
+2025-05-30 09:28:21 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:28:21 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:28:21 - Started CloneApplication in 5.476 seconds (process running for 5.906)
+2025-05-30 09:41:55 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:41:55 - Starting CloneApplication using Java 17.0.10 with PID 3024 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:41:55 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:41:55 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:41:55 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:41:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:41:56 - Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:41:56 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:41:57 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:41:57 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:41:57 - Starting service [Tomcat]
+2025-05-30 09:41:57 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:41:57 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:41:57 - Root WebApplicationContext: initialization completed in 1473 ms
+2025-05-30 09:41:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:41:57 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:41:57 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:41:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:41:57 - HikariPool-1 - Starting...
+2025-05-30 09:41:57 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45f757f4
+2025-05-30 09:41:57 - HikariPool-1 - Start completed.
+2025-05-30 09:41:57 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:41:57 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:41:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:41:58 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:41:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:41:59 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:41:59 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:41:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:41:59 - 
+
+Using generated security password: 4207ad46-77df-4c4f-80a0-5d9721461361
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:42:00 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@117255bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b044bcc, org.springframework.security.web.context.SecurityContextHolderFilter@101ae72a, org.springframework.security.web.header.HeaderWriterFilter@85560ba, org.springframework.web.filter.CorsFilter@6725e1cd, org.springframework.security.web.authentication.logout.LogoutFilter@2912e3d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ea1fcca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ae3faf0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@119772b7, org.springframework.security.web.access.ExceptionTranslationFilter@4e56fb5a, org.springframework.security.web.access.intercept.AuthorizationFilter@c4ec859]
+2025-05-30 09:42:00 - Unable to start LiveReload server
+2025-05-30 09:42:00 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:42:00 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-30 09:42:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:42:00 - HikariPool-1 - Shutdown initiated...
+2025-05-30 09:42:00 - HikariPool-1 - Shutdown completed.
+2025-05-30 09:42:00 - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:42:00 - Stopping service [Tomcat]
+2025-05-30 09:42:00 - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:42:00 - Destroying ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:42:00 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-30 09:42:00 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-05-30 09:43:11 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:43:11 - Starting CloneApplication using Java 17.0.10 with PID 22896 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:43:11 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:43:11 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:43:11 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:43:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:43:12 - Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:43:12 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:43:12 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:43:12 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:43:12 - Starting service [Tomcat]
+2025-05-30 09:43:12 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:43:13 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:43:13 - Root WebApplicationContext: initialization completed in 1357 ms
+2025-05-30 09:43:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:43:13 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:43:13 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:43:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:43:13 - HikariPool-1 - Starting...
+2025-05-30 09:43:13 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@331940fb
+2025-05-30 09:43:13 - HikariPool-1 - Start completed.
+2025-05-30 09:43:13 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:43:13 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:43:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:43:14 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:43:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:43:14 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:43:14 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:43:15 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:43:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:43:15 - 
+
+Using generated security password: 99c6e755-b14c-485b-996a-8ff7b3f43cb8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:43:16 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e1df211, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19adb2a3, org.springframework.security.web.context.SecurityContextHolderFilter@284960b4, org.springframework.security.web.header.HeaderWriterFilter@2407fdeb, org.springframework.web.filter.CorsFilter@7298c177, org.springframework.security.web.authentication.logout.LogoutFilter@2351d539, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@142de51f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c46c9bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@462f6fb9, org.springframework.security.web.access.ExceptionTranslationFilter@1953dd06, org.springframework.security.web.access.intercept.AuthorizationFilter@4951d4cd]
+2025-05-30 09:43:16 - LiveReload server is running on port 35729
+2025-05-30 09:43:16 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:43:16 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:43:16 - Started CloneApplication in 5.007 seconds (process running for 5.445)
+2025-05-30 09:44:29 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 09:44:29 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 09:44:29 - Completed initialization in 0 ms
+2025-05-30 09:44:59 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:44:59 - Starting CloneApplication using Java 17.0.10 with PID 19584 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:44:59 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:44:59 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:44:59 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:45:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:45:00 - Finished Spring Data repository scanning in 65 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:45:00 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:45:00 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:45:00 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:45:00 - Starting service [Tomcat]
+2025-05-30 09:45:00 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:45:01 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:45:01 - Root WebApplicationContext: initialization completed in 1342 ms
+2025-05-30 09:45:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:45:01 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:45:01 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:45:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:45:01 - HikariPool-1 - Starting...
+2025-05-30 09:45:01 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:45:01 - HikariPool-1 - Start completed.
+2025-05-30 09:45:01 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:45:01 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:45:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:45:02 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:45:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:45:02 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:45:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:45:03 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:45:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:45:03 - 
+
+Using generated security password: d90406f7-9445-400b-b86f-fc479e79e76c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:45:03 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e3a42fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21dae3d5, org.springframework.security.web.context.SecurityContextHolderFilter@69468a6e, org.springframework.security.web.header.HeaderWriterFilter@4e56fb5a, org.springframework.web.filter.CorsFilter@117255bb, org.springframework.security.web.authentication.logout.LogoutFilter@23d9085f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@101ae72a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20fe53df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b044bcc, org.springframework.security.web.access.ExceptionTranslationFilter@129d9703, org.springframework.security.web.access.intercept.AuthorizationFilter@75b145cc]
+2025-05-30 09:45:04 - LiveReload server is running on port 35729
+2025-05-30 09:45:04 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:45:04 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:45:04 - Started CloneApplication in 4.922 seconds (process running for 5.309)
+2025-05-30 09:45:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 09:45:48 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 09:45:48 - Completed initialization in 0 ms
+2025-05-30 09:49:31 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:49:31 - Starting CloneApplication using Java 17.0.10 with PID 1688 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:49:31 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:49:31 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:49:31 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:49:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:49:32 - Finished Spring Data repository scanning in 58 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:49:32 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:49:32 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:49:32 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:49:32 - Starting service [Tomcat]
+2025-05-30 09:49:32 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:49:32 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:49:32 - Root WebApplicationContext: initialization completed in 1358 ms
+2025-05-30 09:49:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:49:33 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:49:33 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:49:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:49:33 - HikariPool-1 - Starting...
+2025-05-30 09:49:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:49:33 - HikariPool-1 - Start completed.
+2025-05-30 09:49:33 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:49:33 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:49:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:49:34 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:49:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:49:34 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:49:34 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:49:34 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:49:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:49:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:49:35 - 
+
+Using generated security password: b2d9fa15-b234-4fe0-96cb-1983b51b2804
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:49:35 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a8b426f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4ec859, org.springframework.security.web.context.SecurityContextHolderFilter@768ed4e7, org.springframework.security.web.header.HeaderWriterFilter@129d9703, org.springframework.web.filter.CorsFilter@5e3a42fb, org.springframework.security.web.authentication.logout.LogoutFilter@33c4e237, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69468a6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ea1fcca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21dae3d5, org.springframework.security.web.access.ExceptionTranslationFilter@6c10ca98, org.springframework.security.web.access.intercept.AuthorizationFilter@6f413c43]
+2025-05-30 09:49:36 - LiveReload server is running on port 35729
+2025-05-30 09:49:36 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:49:36 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:49:36 - Started CloneApplication in 4.925 seconds (process running for 5.323)
+2025-05-30 09:50:29 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:50:29 - Starting CloneApplication using Java 17.0.10 with PID 22408 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:50:29 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:50:29 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:50:29 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:50:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:50:30 - Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:50:30 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:50:30 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:50:30 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:50:30 - Starting service [Tomcat]
+2025-05-30 09:50:30 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:50:30 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:50:30 - Root WebApplicationContext: initialization completed in 1347 ms
+2025-05-30 09:50:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:50:31 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:50:31 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:50:31 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:50:31 - HikariPool-1 - Starting...
+2025-05-30 09:50:31 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:50:31 - HikariPool-1 - Start completed.
+2025-05-30 09:50:31 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:50:31 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:50:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:50:32 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:50:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:50:32 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:50:32 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:50:32 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:50:33 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:50:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:50:33 - 
+
+Using generated security password: 6cba6082-03bb-4b73-9395-ce23e029f08a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:50:33 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@117255bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b044bcc, org.springframework.security.web.context.SecurityContextHolderFilter@101ae72a, org.springframework.security.web.header.HeaderWriterFilter@85560ba, org.springframework.web.filter.CorsFilter@6725e1cd, org.springframework.security.web.authentication.logout.LogoutFilter@2912e3d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ea1fcca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ae3faf0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@119772b7, org.springframework.security.web.access.ExceptionTranslationFilter@4e56fb5a, org.springframework.security.web.access.intercept.AuthorizationFilter@c4ec859]
+2025-05-30 09:50:34 - LiveReload server is running on port 35729
+2025-05-30 09:50:34 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:50:34 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:50:34 - Started CloneApplication in 4.976 seconds (process running for 5.384)
+2025-05-30 09:51:41 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 09:51:41 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 09:51:41 - Completed initialization in 1 ms
+2025-05-30 09:52:15 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:52:15 - Starting CloneApplication using Java 17.0.10 with PID 18872 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:52:15 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:52:15 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:52:15 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:52:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:52:16 - Finished Spring Data repository scanning in 65 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:52:16 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:52:17 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:52:17 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:52:17 - Starting service [Tomcat]
+2025-05-30 09:52:17 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:52:17 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:52:17 - Root WebApplicationContext: initialization completed in 1411 ms
+2025-05-30 09:52:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:52:17 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:52:17 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:52:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:52:17 - HikariPool-1 - Starting...
+2025-05-30 09:52:18 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a8e77f
+2025-05-30 09:52:18 - HikariPool-1 - Start completed.
+2025-05-30 09:52:18 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:52:18 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:52:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:52:18 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:52:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:52:19 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:52:19 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:52:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:52:19 - 
+
+Using generated security password: f81f7e0b-e0f6-4daa-8783-1ad1004a48ed
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:52:20 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@133bf822, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39132238, org.springframework.security.web.context.SecurityContextHolderFilter@3ae3faf0, org.springframework.security.web.header.HeaderWriterFilter@679adbb1, org.springframework.web.filter.CorsFilter@72064103, org.springframework.security.web.authentication.logout.LogoutFilter@251a5587, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59a72348, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b719759, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bcfa6e7, org.springframework.security.web.access.ExceptionTranslationFilter@33e91523, org.springframework.security.web.access.intercept.AuthorizationFilter@119772b7]
+2025-05-30 09:52:20 - LiveReload server is running on port 35729
+2025-05-30 09:52:20 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:52:20 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:52:20 - Started CloneApplication in 5.195 seconds (process running for 5.589)
+2025-05-30 09:52:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 09:52:24 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 09:52:24 - Completed initialization in 1 ms
+2025-05-30 09:53:31 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:53:31 - Starting CloneApplication using Java 17.0.10 with PID 9704 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:53:31 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:53:31 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:53:31 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:53:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:53:32 - Finished Spring Data repository scanning in 65 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:53:32 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:53:32 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:53:33 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:53:33 - Starting service [Tomcat]
+2025-05-30 09:53:33 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:53:33 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:53:33 - Root WebApplicationContext: initialization completed in 1421 ms
+2025-05-30 09:53:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:53:33 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:53:33 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:53:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:53:33 - HikariPool-1 - Starting...
+2025-05-30 09:53:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7791323
+2025-05-30 09:53:33 - HikariPool-1 - Start completed.
+2025-05-30 09:53:33 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:53:33 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:53:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:53:34 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:53:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:53:34 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:53:34 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:53:35 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:53:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:53:35 - 
+
+Using generated security password: ba872875-220d-40b5-9976-a56b7d1b949a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:53:36 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39132238, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72064103, org.springframework.security.web.context.SecurityContextHolderFilter@b95f94e, org.springframework.security.web.header.HeaderWriterFilter@20fe53df, org.springframework.web.filter.CorsFilter@6bcfa6e7, org.springframework.security.web.authentication.logout.LogoutFilter@4a70f643, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ac6d0e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@572c4f4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2779a954, org.springframework.security.web.access.ExceptionTranslationFilter@6ea1fcca, org.springframework.security.web.access.intercept.AuthorizationFilter@124b32b3]
+2025-05-30 09:53:36 - LiveReload server is running on port 35729
+2025-05-30 09:53:36 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:53:36 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:53:36 - Started CloneApplication in 5.185 seconds (process running for 5.588)
+2025-05-30 09:53:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 09:53:39 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 09:53:39 - Completed initialization in 1 ms
+2025-05-30 09:54:20 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.controller.BookController
+2025-05-30 09:54:20 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 09:54:20 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 09:54:20 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 09:54:20 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 09:54:20 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 09:54:20 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 09:54:20 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 09:54:20 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 09:54:20 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 09:58:57 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 09:58:57 - Starting CloneApplication using Java 17.0.10 with PID 1396 (D:\Study Summary\clonecode\back\clone\bin\main started by bule9 in D:\Study Summary\clonecode\back)
+2025-05-30 09:58:57 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 09:58:57 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 09:58:57 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 09:58:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 09:58:58 - Finished Spring Data repository scanning in 58 ms. Found 10 JPA repository interfaces.
+2025-05-30 09:58:58 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 09:58:58 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 09:58:58 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:58:58 - Starting service [Tomcat]
+2025-05-30 09:58:58 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 09:58:59 - Initializing Spring embedded WebApplicationContext
+2025-05-30 09:58:59 - Root WebApplicationContext: initialization completed in 1438 ms
+2025-05-30 09:58:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 09:58:59 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 09:58:59 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 09:58:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 09:58:59 - HikariPool-1 - Starting...
+2025-05-30 09:58:59 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ee17471
+2025-05-30 09:58:59 - HikariPool-1 - Start completed.
+2025-05-30 09:58:59 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 09:58:59 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 09:59:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 09:59:00 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 09:59:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 09:59:00 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.BookDetailRepository
+2025-05-30 09:59:00 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ReviewRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.EventDetailRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.MemberRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.PurchaseRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.ShoppingCartRepository
+2025-05-30 09:59:01 - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.clonecod.clone.repository.SubCategoryRepository
+2025-05-30 09:59:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 09:59:01 - 
+
+Using generated security password: 5f2079c9-b7ae-4ecb-91e9-db27282c862e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 09:59:01 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a8b426f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4ec859, org.springframework.security.web.context.SecurityContextHolderFilter@768ed4e7, org.springframework.security.web.header.HeaderWriterFilter@129d9703, org.springframework.web.filter.CorsFilter@5e3a42fb, org.springframework.security.web.authentication.logout.LogoutFilter@33c4e237, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69468a6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ea1fcca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21dae3d5, org.springframework.security.web.access.ExceptionTranslationFilter@6c10ca98, org.springframework.security.web.access.intercept.AuthorizationFilter@6f413c43]
+2025-05-30 09:59:02 - LiveReload server is running on port 35729
+2025-05-30 09:59:02 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 09:59:02 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 09:59:02 - Started CloneApplication in 5.043 seconds (process running for 5.444)
