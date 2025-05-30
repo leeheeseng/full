@@ -520,3 +520,433 @@ This generated password is for development use only. Your security configuration
         bookdetail b1_0 
     where
         b1_0.top_category_id=?
+2025-05-30 16:03:45 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 16:03:45 - Starting CloneApplication using Java 17.0.10 with PID 22216 (D:\Study Summary\clonecode\full\clone\build\classes\java\main started by bule9 in D:\Study Summary\clonecode\full\clone)
+2025-05-30 16:03:45 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 16:03:45 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 16:03:45 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 16:03:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 16:03:45 - Finished Spring Data repository scanning in 66 ms. Found 10 JPA repository interfaces.
+2025-05-30 16:03:45 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 16:03:46 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 16:03:46 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:03:46 - Starting service [Tomcat]
+2025-05-30 16:03:46 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 16:03:46 - Initializing Spring embedded WebApplicationContext
+2025-05-30 16:03:46 - Root WebApplicationContext: initialization completed in 1215 ms
+2025-05-30 16:03:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 16:03:46 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 16:03:46 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 16:03:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 16:03:46 - HikariPool-1 - Starting...
+2025-05-30 16:03:46 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c6699bd
+2025-05-30 16:03:46 - HikariPool-1 - Start completed.
+2025-05-30 16:03:46 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 16:03:46 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 16:03:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 16:03:47 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 16:03:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 16:03:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 16:03:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 16:03:48 - 
+
+Using generated security password: 1b2bf7da-651b-4a36-af59-0bcecc9704d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 16:03:49 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@271f066a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7129e267, org.springframework.security.web.context.SecurityContextHolderFilter@7261a66d, org.springframework.security.web.header.HeaderWriterFilter@3ada4807, org.springframework.web.filter.CorsFilter@39cd1c8a, org.springframework.security.web.authentication.logout.LogoutFilter@1c4a4339, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13fa3c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@769422e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fb0d8b2, org.springframework.security.web.access.ExceptionTranslationFilter@7e817f2f, org.springframework.security.web.access.intercept.AuthorizationFilter@6d6770ee]
+2025-05-30 16:03:49 - LiveReload server is running on port 35729
+2025-05-30 16:03:49 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:03:49 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 16:03:49 - Started CloneApplication in 4.534 seconds (process running for 4.911)
+2025-05-30 16:03:52 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 16:03:52 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 16:03:52 - Completed initialization in 1 ms
+2025-05-30 16:03:52 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 16:03:52 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 16:03:52 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:03:52 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:03:52 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:03:52 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 16:03:52 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 16:03:52 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 16:03:52 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 16:29:01 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 16:29:01 - Starting CloneApplication using Java 17.0.10 with PID 17012 (D:\Study Summary\clonecode\full\clone\build\classes\java\main started by bule9 in D:\Study Summary\clonecode\full\clone)
+2025-05-30 16:29:01 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 16:29:01 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 16:29:01 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 16:29:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 16:29:02 - Finished Spring Data repository scanning in 125 ms. Found 10 JPA repository interfaces.
+2025-05-30 16:29:02 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 16:29:03 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 16:29:03 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:29:03 - Starting service [Tomcat]
+2025-05-30 16:29:03 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 16:29:03 - Initializing Spring embedded WebApplicationContext
+2025-05-30 16:29:03 - Root WebApplicationContext: initialization completed in 2362 ms
+2025-05-30 16:29:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 16:29:04 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 16:29:04 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 16:29:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 16:29:04 - HikariPool-1 - Starting...
+2025-05-30 16:29:04 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f35d8d
+2025-05-30 16:29:04 - HikariPool-1 - Start completed.
+2025-05-30 16:29:04 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 16:29:04 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 16:29:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 16:29:05 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 16:29:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 16:29:06 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 16:29:06 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 16:29:06 - 
+
+Using generated security password: 4b6aa3f6-92e6-45fa-8da3-b27f8700c23d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 16:29:07 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3bafb8cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@390678df, org.springframework.security.web.context.SecurityContextHolderFilter@234f06f0, org.springframework.security.web.header.HeaderWriterFilter@64017961, org.springframework.web.filter.CorsFilter@1b285096, org.springframework.security.web.authentication.logout.LogoutFilter@69a70050, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ad92a21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e817f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e8d91b, org.springframework.security.web.access.ExceptionTranslationFilter@5016713e, org.springframework.security.web.access.intercept.AuthorizationFilter@7f0fa489]
+2025-05-30 16:29:07 - LiveReload server is running on port 35729
+2025-05-30 16:29:07 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:29:07 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 16:29:07 - Started CloneApplication in 6.482 seconds (process running for 6.849)
+2025-05-30 16:30:02 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 16:30:02 - Starting CloneApplication using Java 17.0.10 with PID 5796 (D:\Study Summary\clonecode\full\clone\build\classes\java\main started by bule9 in D:\Study Summary\clonecode\full\clone)
+2025-05-30 16:30:02 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 16:30:02 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 16:30:02 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 16:30:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 16:30:03 - Finished Spring Data repository scanning in 51 ms. Found 10 JPA repository interfaces.
+2025-05-30 16:30:03 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 16:30:03 - Tomcat initialized with port(s): 8080 (http)
+2025-05-30 16:30:03 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:30:03 - Starting service [Tomcat]
+2025-05-30 16:30:03 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-05-30 16:30:03 - Initializing Spring embedded WebApplicationContext
+2025-05-30 16:30:03 - Root WebApplicationContext: initialization completed in 1043 ms
+2025-05-30 16:30:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 16:30:03 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 16:30:03 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 16:30:03 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 16:30:04 - HikariPool-1 - Starting...
+2025-05-30 16:30:04 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@795a5060
+2025-05-30 16:30:04 - HikariPool-1 - Start completed.
+2025-05-30 16:30:04 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 16:30:04 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 16:30:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 16:30:04 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 16:30:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 16:30:05 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 16:30:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 16:30:05 - 
+
+Using generated security password: 9f204d2e-73d2-4ff0-8ddc-6306690c7ef4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 16:30:06 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c77869, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f8d388e, org.springframework.security.web.context.SecurityContextHolderFilter@14459173, org.springframework.security.web.header.HeaderWriterFilter@4c6ab989, org.springframework.web.filter.CorsFilter@56786509, org.springframework.security.web.authentication.logout.LogoutFilter@3d80ab25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e817f2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14d23e00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@535d5edc, org.springframework.security.web.access.ExceptionTranslationFilter@65421112, org.springframework.security.web.access.intercept.AuthorizationFilter@390678df]
+2025-05-30 16:30:06 - LiveReload server is running on port 35729
+2025-05-30 16:30:06 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-30 16:30:06 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-30 16:30:06 - Started CloneApplication in 4.075 seconds (process running for 4.394)
+2025-05-30 16:30:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-30 16:30:07 - Initializing Servlet 'dispatcherServlet'
+2025-05-30 16:30:07 - Completed initialization in 1 ms
+2025-05-30 16:30:07 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 16:30:07 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 16:30:07 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:30:07 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_id,
+        e1_0.big_cover,
+        e1_0.book_id,
+        e1_0.cover,
+        e1_0.discount_rate,
+        e1_0.end_date,
+        e1_0.start_date,
+        e1_0.title 
+    from
+        event e1_0 
+    where
+        e1_0.start_date<=? 
+        and e1_0.end_date>=?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:30:07 - 
+    select
+        e1_0.event_detail_id,
+        e1_0.event_id,
+        e1_0.event_detail 
+    from
+        eventdetail e1_0 
+    where
+        e1_0.event_detail_id=?
+2025-05-30 16:30:07 - 카테고리별 도서 조회 - 상위: 1, 하위: null, 페이지: 0, 크기: 20, 정렬: bookId,asc, 기간: rating
+2025-05-30 16:30:07 - 상위 카테고리 조회 - topCategoryId: 1
+2025-05-30 16:30:07 - 
+    select
+        b1_0.book_id,
+        b1_0.writers_comment,
+        b1_0.book_index,
+        b1_0.cover,
+        b1_0.discount_rate,
+        b1_0.price,
+        b1_0.publication_date,
+        b1_0.publisher,
+        b1_0.rating,
+        b1_0.subcategory_id,
+        b1_0.title,
+        b1_0.top_category_id,
+        b1_0.writer 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=? 
+    order by
+        b1_0.rating desc 
+    limit
+        ?,?
+2025-05-30 16:30:07 - 
+    select
+        count(b1_0.book_id) 
+    from
+        bookdetail b1_0 
+    where
+        b1_0.top_category_id=?
+2025-05-30 16:39:26 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 16:39:26 - Starting CloneApplication using Java 17.0.10 with PID 3040 (D:\Study Summary\clonecode\full\clone\build\classes\java\main started by bule9 in D:\Study Summary\clonecode\full\clone)
+2025-05-30 16:39:26 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 16:39:26 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30 16:39:26 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30 16:39:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 16:39:27 - Finished Spring Data repository scanning in 51 ms. Found 10 JPA repository interfaces.
+2025-05-30 16:39:27 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 16:42:15 - HV000001: Hibernate Validator 8.0.1.Final
+2025-05-30 16:42:15 - Starting CloneApplicationTests using Java 17.0.10 with PID 21896 (started by bule9 in D:\Study Summary\clonecode\full\clone)
+2025-05-30 16:42:15 - No active profile set, falling back to 1 default profile: "default"
+2025-05-30 16:42:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-30 16:42:15 - Finished Spring Data repository scanning in 63 ms. Found 10 JPA repository interfaces.
+2025-05-30 16:42:15 - No MyBatis mapper was found in '[com.clonecod.clone]' package. Please check your configuration.
+2025-05-30 16:42:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-30 16:42:16 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-05-30 16:42:16 - HHH000406: Using bytecode reflection optimizer
+2025-05-30 16:42:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-30 16:42:16 - HikariPool-1 - Starting...
+2025-05-30 16:42:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5960f17
+2025-05-30 16:42:16 - HikariPool-1 - Start completed.
+2025-05-30 16:42:16 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-30 16:42:16 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-30 16:42:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-30 16:42:17 - 
+    alter table bookdetail 
+       modify column rating DECIMAL(3,2)
+2025-05-30 16:42:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 16:42:17 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-30 16:42:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-30 16:42:18 - 
+
+Using generated security password: bb7411f3-7cb1-4a9b-b377-2fcfa77e9bec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-30 16:42:18 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3387d45e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f693a39, org.springframework.security.web.context.SecurityContextHolderFilter@3579682, org.springframework.security.web.header.HeaderWriterFilter@5b1e336c, org.springframework.web.filter.CorsFilter@787f97b, org.springframework.security.web.authentication.logout.LogoutFilter@1c461b90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f64c40c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7049d079, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37e682da, org.springframework.security.web.access.ExceptionTranslationFilter@2c34c819, org.springframework.security.web.access.intercept.AuthorizationFilter@1bf2e21d]
+2025-05-30 16:42:19 - Started CloneApplicationTests in 4.25 seconds (process running for 5.112)
+2025-05-30 16:42:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-30 16:42:19 - HikariPool-1 - Shutdown initiated...
+2025-05-30 16:42:19 - HikariPool-1 - Shutdown completed.
